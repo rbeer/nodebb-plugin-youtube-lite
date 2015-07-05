@@ -5,17 +5,12 @@
     "url": "https://github.com/a5mith/nodebb-plugin-youtube-lite",
     "library": "./library.js",
     "hooks": [
-        { "hook": "action:markdown.updateParserRules", "method": "updateParser" },
         { "hook": "filter:parse.post", "method": "parse" }
     ],
     "staticDirs": {
-        "static": "./static"
     },
     "less": [
-        "static/style.less"
     ],
     "scripts": [
-        "static/lib/lazyYT.js",
-        "static/lib/main.js"
     ]
 }
